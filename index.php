@@ -6,50 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PHP</title>
     <style>
-        body {
-            background: lightblue;
-        }
-        h1 {
-            color: darkred;
-            font-size: 2.6rem;
-            text-align: center;
-        }
-        h2 {
-            text-align: center;
-        }
-        hr {
-            min-height: 2rem;
-            background: blue;
-            border: gray 0.6rem solid;
-        }
-        form {
-            text-align: center;
-        }
-        strong {
-            font-size: 2rem;
-            color: white;
-        }
-        .h2class {
-            color: green;
-        }
+    body {
+        background: #ababba;
+        text-align: center;
+        color: #111333; 
+    }
     </style>
 </head>
 <body>
-    <h1>This is a php tester</h1>
+    <h1>Internal Functions</h1>
     <hr>
     <?php
-        echo "<h2>Hi this is a h2 displayed with php wth echo</h2>\n";
-        print "<h2 class='h2class'>This is a php print<h2>";
-    ?>
-    <hr>
-    <h2>Input your name</h2>
-    <form method="GET">
-        <input type="text" name="person">
-        <button>Submit</button>
-    </form>
-    <?php 
-        $name = $_GET['person'];
-        echo "<h2><strong>".$name."</strong> is a hamsom fellow!<h2>";
+        $HR = "<hr>";
+        echo "<h2>Hi Paul<h2>";
+        echo "echo h2 tag";
+        print $HR;
+        print "print strlen = ";
+        print strlen("<h2>Hi Paul<h2>");
+        print $HR;
+        echo "echo str_word_count = ";
+        echo str_word_count("How many words are there");
+        echo $HR;
+        echo strrev("Is it or is it not");
+        print "<h2> is strrev <h2>";
+        echo $HR;
+        echo "strpos = ";
+        print strpos("HAVE A NICE DAY", "NICE");
+        echo $HR;
+        print "<h2>str_repalce</h2>";
+        echo str_replace("bad", "greate","I am so bad its not human");
+        echo $HR;
+        // string
+        $name = "Paul Sandley";
+        // interger
+        $interger = 46;
+        // float
+        $float = 3.1415;
+        // boolean
+        //true = 1
+        //false = 0
+        // array 
+        $array = array("Paz", "Jim", "Bob");
+        echo $array['0'];
     ?>
 </body>
 </html>
