@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PHP</title>
-    <style>
-    body {
-        background: #ababba;
-        text-align: center;
-        color: #111333; 
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1>Internal Functions</h1>
@@ -49,5 +44,6 @@
         $array = array("Paz", "Jim", "Bob");
         echo $array['0'];
     ?>
+    <script src="app.js"></script>
 </body>
 </html>

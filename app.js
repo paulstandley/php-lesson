@@ -1,0 +1,1 @@
+document.write("<h2>javascript works</h2>");
