@@ -1,1 +1,1 @@
-document.write("<h2>javascript works</h2>");
+document.write("<h4>javascript works</h4>");
