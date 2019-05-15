@@ -8,10 +8,20 @@
     <title>PHP</title>
 </head>
 <body>
-    <h1>PHP arrays</h1>
+    <h1>PHP functions</h1>
     <?php 
         $array = array("Paul", "Louise", "Kerrin", "Melissa");
-        
+        echo "Hello ".$array[0]."<br>";
+        $x = 100;
+        function newCalc($x) {
+            $newnumber = $x * 0.75;
+            echo "here is 75% of what you wrote: ".$newnumber;
+        }
+        $x = 1000;
+        $a = 10;
+        newCalc($x);
+        echo "<br>";
+        newCalc($a);
     ?>
     <script src="js/app.js"></script>
 </body>
