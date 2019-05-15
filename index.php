@@ -4,46 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>PHP</title>
-    <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <h1>Internal Functions</h1>
-    <hr>
     <?php
-        $HR = "<hr>";
-        echo "<h2>Hi Paul<h2>";
-        echo "echo h2 tag";
-        print $HR;
-        print "print strlen = ";
-        print strlen("<h2>Hi Paul<h2>");
-        print $HR;
-        echo "echo str_word_count = ";
-        echo str_word_count("How many words are there");
-        echo $HR;
-        echo strrev("Is it or is it not");
-        print "<h2> is strrev <h2>";
-        echo $HR;
-        echo "strpos = ";
-        print strpos("HAVE A NICE DAY", "NICE");
-        echo $HR;
-        print "<h2>str_repalce</h2>";
-        echo str_replace("bad", "greate","I am so bad its not human");
-        echo $HR;
-        // string
-        $name = "Paul Sandley";
-        // interger
-        $interger = 46;
-        // float
-        $float = 3.1415;
-        // boolean
-        //true = 1
-        //false = 0
-        // array 
-        $array = array("Paz", "Jim", "Bob");
-        echo $array['0'];
+        $hs = "<h1 style='color: blue'>";
+        $he = "</h1>";
+        $name = "Paul Standley";
+        $doing = " is learning <strong style='color: pink'>PHP</strong>";
+        echo $hs.$name.$doing.$he; 
     ?>
+    <hr>
+    <form method="GET">
+        <input type="text" name="answer">
+        <button>Submit</button>
+    </form>
+    <?php
+    // switch stament
+    $x = $_GET['answer'];
+    $Theansweris = "The answer is ";
+    // runs without a value throws exseption
+    //$x = "a number";
+    switch($x) {
+        case 1: echo $Theansweris.$x;
+        break;
+        case 2: echo $Theansweris.$x;
+        break;
+        case 3: echo $Theansweris.$x;
+        break;
+        case 4: echo $Theansweris.$x;
+        break;
+        default: echo $Theansweris.$x;
+    }
+    echo "<hr>";
+    ?>
+    <hr>
     <script src="app.js"></script>
 </body>
 </html>
