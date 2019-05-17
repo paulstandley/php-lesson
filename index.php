@@ -28,7 +28,11 @@
         //functionscope();
         //echo $_POST['postname'];
         //echo $_GET['getname'];
+        setcookie("name", "Kerrin", time() + 86400);
+
+        $_SESSION['name'] = "12";
     ?>
+    <!--
     <form method="POST">
         <input type="hidden" name="postname" value="notintheurl">
         <button type="submit">POST ME!</button>
@@ -37,6 +41,7 @@
         <input type="hidden" name="getname" value="intheurl">
         <button type="submit">GET ME!</button>
     </form>
+    -->
     <script src="js/app.js"></script>
 </body>
 </html>
