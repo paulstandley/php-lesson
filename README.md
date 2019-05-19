@@ -34,3 +34,9 @@ WHERE id='1'
 SELECT * FROM posts ORDER BY id ASC
 SELECT * FROM posts ORDER BY subject DESC
 ```
+
+---
+
+## OOP
+
+[OOP](https://www.youtube.com/watch?v=dQxuYRNbL_M&t=49s)
