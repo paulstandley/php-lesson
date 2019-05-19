@@ -13,7 +13,7 @@
   </header>
     <?php 
       // https://www.youtube.com/watch?v=dQxuYRNbL_M&t=49s
-      class Customer {
+      abstract class Customer {
         private $id;
         public $name;
         protected $email;
@@ -26,6 +26,8 @@
           $this->email = $email;
           $this->balance = $balance;
         }
+
+        abstract function getEmail();
         /*
         public function __destruct() {
           echo "the destruct ran... <br>";
@@ -69,5 +71,20 @@
       $subsriber = new Subscriber(007, "Paul Standley", "paul@paul.com", 10000000, "Pro");
       echo $subsriber->getEmail();
     ?>
+    <hr>
+    <?php 
+
+     class User{
+       public $username;
+       public $password;
+       public static $passwordLength = 5;
+       public static function getPasswordLength() {
+         return self::$passwordLength;
+       }
+     } 
+     echo User::getPasswordLength();
+    ?>
+
+
   </body>
 </html>
