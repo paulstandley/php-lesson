@@ -1,3 +1,6 @@
+<?php
+    include_once "includes/dbh.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +15,7 @@
         <h1>MySQL Database</h1>
     </header>
     <?php 
-        echo "PHP";
+        echo "LOUISE HOLT I LOVE YOU !";
     ?>
     <script src="js/app.js"></script>
 </body>
