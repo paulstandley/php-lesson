@@ -2,7 +2,7 @@
    $dbServername = "localhost";
    $dbUsername = "root";
    $dbPassword = "";
-   $dbName = "loginsytem";
+   $dbName = "loginsystem";
    
-   $conn = mysql_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+   $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 ?>

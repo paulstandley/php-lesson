@@ -15,7 +15,15 @@
         <h1>MySQL Database</h1>
     </header>
     <?php 
-        echo "LOUISE HOLT I LOVE YOU !";
+        $sql = "SELECT * FROM users;";
+        $results = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($results);
+        if($resultCheck > 0) {
+            while($row = mysqli_fetch_assoc($results)) {
+                echo $row['user_first'] . " " . $row['user_last'] . "<br>";
+            }
+
+        }
     ?>
     <script src="js/app.js"></script>
 </body>
