@@ -6,7 +6,7 @@
 
 ## **__PHP Tutorils By mmtuts__**
 
-## [Youtube](https://www.youtube.com/watch?v=0YLJ0uO6n8I&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=37)
+## [Youtube](https://www.youtube.com/watch?v=I4JYwRIjX6c&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=40)
 
 ## [ToDo](https://www.youtube.com/watch?v=LC9GaXkdxF8)
 
@@ -37,7 +37,7 @@ SELECT * FROM posts ORDER BY subject DESC
 
 ---
 
-## OOP
+## OOP by **Brad Travis**
 
 [OOP](https://www.youtube.com/watch?v=dQxuYRNbL_M&t=49s)
 
