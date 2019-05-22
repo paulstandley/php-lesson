@@ -43,7 +43,7 @@
     VALUES ("Jim","Bob","jimbob@jimbob.co.uk","jimbo1696","test127");';
     mysqli_query($conn, $sql);
     */
-        $data = "Admin";
+        $data = "Mollymow";
         // Create a template
         $sql = "SELECT * FROM users WHERE user_uid=?;";
         // Create a prepard statement
