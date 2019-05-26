@@ -6,9 +6,7 @@
 
 ## **__PHP Tutorils By mmtuts__**
 
-## [Youtube](https://www.youtube.com/watch?v=I4JYwRIjX6c&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=40)
-
-## [ToDo](https://www.youtube.com/watch?v=LC9GaXkdxF8)
+## [Youtube](https://www.youtube.com/watch?v=HLx-zbl6siM&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=43&t=0s) 3:00
 
 ```SQL
 /*Create table*/
