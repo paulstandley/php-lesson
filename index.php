@@ -22,5 +22,25 @@
     <input type="password" name="pwd" placeholder="Password">
     <button type="submit" name="submit">Signup</button>
   </form>
+  <?php 
+    $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+    if(strpos($fullUrl, "signup=empty") == true) {
+      echo "<h2 class='error'>You did not fill in all fields!</h2>";
+      exit();
+    }
+    elseif(strpos($fullUrl, "signup=char") == true) {
+      echo "<h2 class='error'>You used invlid characters!</h2>";
+      exit();
+    }
+    elseif(strpos($fullUrl, "signup=email") == true) {
+      echo "<h2 class='error'>You used an invalid email!</h2>";
+      exit();
+    }
+    elseif(strpos($fullUrl, "signup=success") == true) {
+      echo "<h2 class='success'>You have been signed up!</h2>";
+      exit();
+    }
+  ?>
 </body>
 </html>

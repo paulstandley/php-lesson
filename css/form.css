@@ -29,3 +29,13 @@ button {
   color: #74748C;
   background: blue;
 }
+
+h2.error {
+  color: red;
+  font-size: 2rem;
+}
+
+h2.success {
+  color: green;
+  font-size: 2rem;
+}
