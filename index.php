@@ -1,35 +1,26 @@
-<?php
-// check if user has clicked the signup button
-  if(isset($_POST['submit'])) {
-    // include the database connection
-    include_once 'dbh.inc.php';
-    // get data from signup form
-    $first = $_POST['first'];
-    $last = $_POST['last'];
-    $email = $_POST['email'];
-    $uid = $_POST['uid'];
-    $pwd = $_POST['pwd'];
-    // check if inputs are empty
-    if(empty($first) || empty($last) || empty($email) || empty($uid) || empty($pwd)) {
-      header("Location: ../index.php?signup=empty");
-      exit();
-    }else{
-      // check if input charactors are valid
-      if(!preg_match("/^[a-zA-Z]*$/", $first) || !preg_match("/^[a-zA-Z]*$/", $last)) {
-        header("Location: ../index.php?signup=char");
-        exit();        
-      }else{
-        if(!filter_has_var($email, FILTER_VALIDATE_EMAIL)) {
-          header("Location: ../index.php?signup=email");
-          exit();
-        }else{
-          header("Location: ../index.php?signup=success");
-          exit();
-        }
-      }
-    }
-  }else{
-    header("Location: ../index.php");
-    exit();
-  }
+<?php 
+
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/form.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>SIGNUP</h1>
+  </header>
+  <form action="includes/signup.inc.php" method="POST">
+    <input type="text" name="first" placeholder="Firstname">
+    <input type="text" name="last" placeholder="Lastname">
+    <input type="text" name="email" placeholder="Email">
+    <input type="text" name="uid" placeholder="Username">
+    <input type="password" name="pwd" placeholder="Password">
+    <button type="submit" name="submit">Signup</button>
+  </form>
+</body>
+</html>

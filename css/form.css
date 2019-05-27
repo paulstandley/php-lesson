@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  font-size: 2rem;
+  background: rgb(220, 239, 245);
+  padding: 2rem;
+  color: blue;
+}
+
+form {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  background: rgb(229, 229, 248);
+}
+
+form > input {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  background: blue;
+} 
+
+button {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: #74748C;
+  background: blue;
+}
