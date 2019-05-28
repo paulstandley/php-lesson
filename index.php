@@ -1,6 +1,3 @@
-<?php 
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +11,7 @@
   <header>
     <h1>SIGNUP</h1>
   </header>
-  <form action="includes/signup.inc.php" method="POST">
+  <form action="signup.inc.php" method="POST">
     <input type="text" name="first" placeholder="Firstname">
     <input type="text" name="last" placeholder="Lastname">
     <input type="text" name="email" placeholder="Email">
