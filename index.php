@@ -20,6 +20,7 @@
     <button type="submit" name="submit">Signup</button>
   </form>
   <?php 
+  /*
     $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
     if(strpos($fullUrl, "signup=empty") == true) {
@@ -37,6 +38,28 @@
     elseif(strpos($fullUrl, "signup=success") == true) {
       echo "<h2 class='success'>You have been signed up!</h2>";
       exit();
+    }
+    */
+    if(!isset($_GET['signup'])) {
+      exit();
+    }else{
+      $signupCheck = $_GET['signup'];
+      if($signupCheck == "empty") {
+        echo "<h2 class='error'>You did not fill in all fields!</h2>";
+        exit();
+      }
+      elseif($signupCheck == "char") {
+        echo "<h2 class='error'>You used invlid characters!</h2>";
+        exit();
+      }
+      elseif($signupCheck == "email") {
+        echo "<h2 class='error'>You used an invalid email!</h2>";
+        exit();
+      }
+      elseif($signupCheck == "success") {
+        echo "<h2 class='success'>You have been signed up!</h2>";
+        exit();
+      }
     }
   ?>
 </body>

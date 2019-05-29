@@ -5,7 +5,7 @@
     exit();
   }else{
     // include the database connection
-    include_once 'dbh.inc.php';
+    include_once '../includes/dbh.inc.php';
     // get data from signup form
     $first = $_POST['first'];
     $last = $_POST['last'];
