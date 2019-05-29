@@ -12,10 +12,33 @@
     <h1>SIGNUP</h1>
   </header>
   <form action="signup.inc.php" method="POST">
-    <input type="text" name="first" placeholder="Firstname">
-    <input type="text" name="last" placeholder="Lastname">
+
+    <?php
+
+      if(isset($_GET['first'])) {
+        $first = $_GET['first'];
+        echo '<input type="text" name="first" placeholder="Firstname" value="'.$first.'">';
+      }else{
+        echo '<input type="text" name="first" placeholder="Firstname">';
+      }
+
+      if(isset($_GET['last'])) {
+        $last = $_GET['last'];
+        echo '<input type="text" name="last" placeholder="Lastname" value="'.$last.'">';
+      }else{
+        echo '<input type="text" name="first" placeholder="Lastname">';
+      }
+
+      if(isset($_GET['uid'])) {
+        $uid = $_GET['uid'];
+        echo '<input type="text" name="uid" placeholder="Username" value="'.$uid.'">';
+      }else{
+        echo '<input type="text" name="uid" placeholder="Username">';
+      }
+
+    ?>
+    
     <input type="text" name="email" placeholder="Email">
-    <input type="text" name="uid" placeholder="Username">
     <input type="password" name="pwd" placeholder="Password">
     <button type="submit" name="submit">Signup</button>
   </form>

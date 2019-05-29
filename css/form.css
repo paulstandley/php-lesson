@@ -31,6 +31,10 @@ button {
   background: blue;
 }
 
+h2 {
+  text-align: center;
+}
+
 h2.error {
   color: red;
   font-size: 2rem;
